@@ -5,7 +5,8 @@ reverse order, to all views in the included urlconf.
 """
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import RegexURLPattern, RegexURLResolver
-from django.utils.importlib import import_module
+from importlib import import_module
+
 
 class DecoratedPatterns(object):
     """
